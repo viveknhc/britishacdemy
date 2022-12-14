@@ -1,0 +1,62 @@
+{% extends 'web/base.html' %}
+{% load static %}
+{% block content %}
+
+
+<!-- Start Page Title Area -->
+<div class="page-title-area item-bg4 jarallax" data-jarallax='{"speed": 0.3}'>
+    <div class="container">
+        <div class="page-title-content">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li>Events</li>
+            </ul>
+            <h2>Events</h2>
+        </div>
+    </div>
+</div>
+<!-- End Page Title Area -->
+
+<!-- Start Events Area -->
+<section class="events-area pt-100 pb-70">
+    <div class="container">
+        {% for event in events %}
+        <div class="single-events-box mb-30">
+            <div class="events-box">
+                <div class="events-image">
+                    <div class="image bg1" style="background-image: url('{{event.image.crop.730x560}}');">
+                        <img src="{{event.image.crop.730x560}}" alt="image">
+                    </div>
+                </div>
+
+                <div class="events-content">
+                    <div class="content">
+                        <h3><a href="">{{event.title}}</a></h3>
+                        <p>{{event.description}}</p>
+                        <!-- <span class="location"><i class='bx bx-map'></i> 120 G-35 Spinsovila Sc, USA</span> -->
+                        <a href="" class="join-now-btn">Join Now</a>
+                    </div>
+                </div>
+
+                <div class="events-date">
+                    <div class="date">
+                        <div class="d-table">
+                            <div class="d-table-cell">
+                                <span>{{event.date|date:"m"}}</span>
+                                <h3>{{event.date|date:"d F"}}</h3>
+                                <p>{{event.time}}</p>
+                                <i class='bx bx-calendar'></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+
+
+    </div>
+</section>
+<!-- End Events Area -->
+
+{% endblock %}

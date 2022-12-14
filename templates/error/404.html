@@ -1,0 +1,61 @@
+{% extends 'web/base.html' %}
+{% load static %}
+{% block content %}
+
+        <!-- Search Box Layout -->
+        <div class="search-overlay">
+            <div class="d-table">
+                <div class="d-table-cell">
+                    <div class="search-overlay-layer"></div>
+                    <div class="search-overlay-layer"></div>
+                    <div class="search-overlay-layer"></div>
+                    
+                    <div class="search-overlay-close">
+                        <span class="search-overlay-close-line"></span>
+                        <span class="search-overlay-close-line"></span>
+                    </div>
+
+                    <div class="search-overlay-form">
+                        <form>
+                            <input type="text" class="input-search" placeholder="Search here...">
+                            <button type="submit"><i class='bx bx-search-alt'></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Search Box Layout -->
+
+        <!-- Start Page Title Area -->
+        <div class="page-title-area item-bg1 jarallax" data-jarallax='{"speed": 0.3}'>
+            <div class="container">
+                <div class="page-title-content">
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li>Error</li>
+                    </ul>
+                    <h2>Error 404</h2>
+                </div>
+            </div>
+        </div>
+        <!-- End Page Title Area -->
+
+        <!-- Start Error 404 Area -->
+        <div class="error-404-area">
+            <div class="container">
+                <div class="notfound">
+                    <div class="notfound-bg">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+
+                    <h1>Oops!</h1>
+                    <h3>Error 404 : Page Not Found</h3>
+                    <p>The page you are looking for might have been removed had its name changed or is temporarily unavailable.</p>
+                    <a href="/" class="default-btn"><i class='bx bx-home-circle icon-arrow before'></i><span class="label">Back Home</span><i class="bx bx-home-circle icon-arrow after"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- End Error 404 Area -->
+{% endblock %}

@@ -1,0 +1,583 @@
+{% extends 'web/base.html' %}
+{% load static %}
+{% block content %}
+
+
+{% comment %}
+<!-- Search Box Layout -->
+<div class="search-overlay">
+    <div class="d-table">
+        <div class="d-table-cell">
+            <div class="search-overlay-layer"></div>
+            <div class="search-overlay-layer"></div>
+            <div class="search-overlay-layer"></div>
+
+            <div class="search-overlay-close">
+                <span class="search-overlay-close-line"></span>
+                <span class="search-overlay-close-line"></span>
+            </div>
+
+            <div class="search-overlay-form">
+                <form>
+                    <input type="text" class="input-search" placeholder="Search here...">
+                    <button type="submit"><i class='bx bx-search-alt'></i></button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Search Box Layout -->
+{% endcomment %}
+
+<!-- Start Main Banner -->
+<div class="banner-section" style="background-image:url({{ banner.image.url }});">
+    <div class="d-table">
+        <div class="d-table-cell">
+            <div class="container">
+                <div class="banner-content">
+                    <span class="sub-title">{{ banner.sub_heading }}</span>
+                    <h1>{{ banner.main_heading }}</h1>
+                    <p>{{ banner.short_description }}</p>
+                    <div class="btn-box">
+                        <a href="#about" class="default-btn"><i
+                                class='bx bx-move-horizontal icon-arrow before'></i><span class="label">Get
+                                Started</span><i class="bx bx-move-horizontal icon-arrow after"></i></a>
+                        <!-- <a href="https://www.youtube.com/watch?v=bk7McNUjWgw" class="video-btn popup-youtube"><span><i
+                                    class='bx bx-play-circle'></i></span> Watch Video</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+</div>
+<!-- End Main Banner -->
+
+<!-- Start Feedback Form Area -->
+<section class="feedback-form-area">
+    <div class="container">
+        <div class="feedback-form-inner">
+            <div class="row">
+                <div class="col-lg-5 col-md-12">
+                    <div class="feedback-form-image">
+                        <img data-cfsrc="{% static 'web/img/note-pad.png' %}" alt="image"
+                            style="display:none;visibility:hidden;"><img
+                                src="{% static 'web/img/note-pad.png' %}" alt="image">
+                    </div>
+                </div>
+
+                <div class="col-lg-7 col-md-12">
+                    <div class="feedback-form">
+                        <h3>Here is Students Feedback Form</h3>
+
+                        <form class="ajax" method="POST">
+                        {% csrf_token %}
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                      {{form.name}}
+                                        <!-- <input type="text" class="form-control" placeholder="Your name*"> -->
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        {{form.email}}
+                                        <!-- <input type="email" class="form-control" placeholder="Your email*"> -->
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        {{form.message}}
+                                        <!-- <textarea cols="30" rows="4" class="form-control" placeholder="Message here"></textarea> -->
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-12">
+                                    <button type="submit" class="default-btn"><i
+                                            class='bx bx-send icon-arrow before'></i><span class="label">Submit</span><i
+                                            class="bx bx-send icon-arrow after"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Feedback Form Area -->
+
+<!-- Start About Area -->
+<section class="about-area pt-100" id="about">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-12">
+                <div class="about-content left-content">
+                    <span class="sub-title">About Us</span>
+                    <h2>Learn New Skills to go ahead for Your Career</h2>
+                    <h6>We can support student forum 24/7 and monitor your academic excellence.</h6>
+                    <p>British academy in Kozhikode is one of the leading enterprises in the language classes for English. Also delivers courses for IELTS tutorials, language classes for English, language classes for English conversation, English language classes for children, language classes for Hindhi conversations, language classes for  Arabics, institutes for IELTS, IELTS test centres, and much more. We welcome learning enthusiasts for uncovering new chapters of knowledge.</p>
+
+                    <div class="features-text">
+                        <h5><i class='bx bx-planet'></i>A place where you can achieve</h5>
+                        <p>Education encompasses both the teaching and learning of knowledge, proper conduct, and
+                            technical competency.</p>
+                    </div>
+
+                   
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-12">
+                <div class="about-right-image">
+                    <img data-cfsrc="{% static 'web/img/about/4.jpg' %}" alt="image"
+                        style="display:none;visibility:hidden;"><img src="{% static 'web/img/about/4.jpg' %}"
+                            alt="image">
+                    <img data-cfsrc="{% static 'web/img/about/3.jpg' %}" alt="image"
+                        style="display:none;visibility:hidden;"><img src="{% static 'web/img/about/3.jpg' %}"
+                            alt="image">
+
+                    <div class="text-box">
+                        <div class="inner">
+                            Trusted By
+                            <span>75K+</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="particles-js-circle-bubble-4"></div>
+</section>
+<!-- End About Area -->
+
+<!-- Start Funfacts Area -->
+<section class="funfacts-area pt-100">
+    <div class="container">
+        <div class="funfacts-inner">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-6">
+                    <div class="single-funfact">
+                        <div class="icon">
+                            <i class='bx bxs-group'></i>
+                        </div>
+                        <h3 class="" data-count="">3000+</h3>
+                        <p>Expert Instructors</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-6">
+                    <div class="single-funfact">
+                        <div class="icon">
+                            <i class='bx bx-user-pin'></i>
+                        </div>
+                        <h3 class="" data-count=".">10,00,000+</h3>
+                        <p>Happy Students</p>
+                    </div>
+                </div>
+
+               
+            </div>
+
+            <div id="particles-js-circle-bubble"></div>
+        </div>
+    </div>
+</section>
+<!-- End Funfacts Area -->
+
+<!-- Start Courses Area -->
+<section class="courses-area pt-100 pb-70">
+    <div class="container">
+        <div class="section-title text-left">
+            <span class="sub-title">Discover Courses</span>
+            <h2>Our Popular Online Courses</h2>
+            <a href="{% url 'web:courses_category' %}" class="default-btn"><i
+                    class='bx bx-show-alt icon-arrow before'></i><span class="label">All Courses</span><i
+                    class="bx bx-show-alt icon-arrow after"></i></a>
+        </div>
+
+        <div class="shorting-menu">
+            <button class="filter" data-filter="all">All</button>
+            {% for category in categories %}
+            <button class="filter" data-filter=".{{category.title|slugify}}">{{category.title}}</button>
+            {% endfor %}
+
+            {% comment %}
+            <button class="filter" data-filter=".design">Design (05)</button>
+            <button class="filter" data-filter=".development">Development (04)</button>
+            <button class="filter" data-filter=".language">Language (02)</button>
+            <button class="filter" data-filter=".management">Management (03)</button>
+            <button class="filter" data-filter=".photography">Photography (04)</button>
+            {% endcomment %}
+        </div>
+     
+        <div class="shorting">
+            <div class="row">
+                {% for course in courses %}
+                <div class="col-lg-4 col-md-6 mix {{course.category.title|slugify}}">
+                    <div class="single-courses-item mb-30">
+                        <div class="courses-image">
+                            <a href="{% url 'web:course_details' course.slug %}" class="d-block">
+                                        
+                                        
+                                        <img
+                                        src="{{course.image.crop.600x485}}" alt="image">
+                                    </a>
+                        </div>
+
+                        <div class="courses-content">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <!-- <div class="course-author d-flex align-items-center">
+                                    <img data-cfsrc="{% static 'web/img/user1.jpg' %}" class="shadow" alt="image"
+                                        style="display:none;visibility:hidden;"><img
+                                            src="{% static 'web/img/user1.jpg' %}" class="shadow"
+                                            alt="image">
+                                    <span>Steven Smith</span>
+                                </div> -->
+
+                                <!-- <div class="courses-rating">
+                                    <div class="review-stars-rated">
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star-half'></i>
+                                    </div>
+
+                                    <div class="rating-total">
+                                        4.5 (2)
+                                    </div>
+                                </div> -->
+                            </div>
+
+                            <h3><a href="{% url 'web:course_details' course.slug %}" class="d-inline-block">{{course.title}}</a></h3>
+                            <p>{{course.summary}}</p>
+                        </div>
+
+                        <div class="courses-box-footer">
+                            <ul>
+                                <li class="students-number">
+                                    <i class='bx bx-user'></i> {{course.students}} students
+                                </li>
+
+                                <li class="courses-lesson text-end">
+                                    <i class='bx bx-book-open'></i> {{ course.lessons }}lessons
+                                </li>
+
+                                <!-- <li class="courses-price">
+                                    &#x20B9;{{course.price}}
+                                </li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+
+               
+              
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Courses Area -->
+
+<!-- Start Courses Categories Area -->
+<section class="courses-categories-area bg-image pt-100 pb-70">
+    <div class="container">
+        <div class="section-title text-left">
+            <span class="sub-title">Courses Categories</span>
+            <h2>Browse Trending Categories</h2>
+            <a href="{% url 'web:courses_category' %}" class="default-btn"><i
+                    class='bx bx-show-alt icon-arrow before'></i><span class="label">View All</span><i
+                    class="bx bx-show-alt icon-arrow after"></i></a>
+        </div>
+
+        <div class="courses-categories-slides owl-carousel owl-theme">
+            {% for category in categories %}
+            <div class="single-categories-courses-box mb-30">
+                <div class="icon">
+                    <i class=''> <img src="{{category.icon.url}}" alt="" class="d-block mx-auto" style="width: 60px; height: 60px;"></i>
+                </div>
+                <h3>{{category.title}}</h3>
+                <!-- <span>60 Courses</span> -->
+
+                <a href="{% url 'web:courses' category.slug %}" class="link-btn"></a>
+            </div>
+            {% endfor %}
+
+
+            {% comment %}
+            <div class="single-categories-courses-box mb-30">
+                <div class="icon">
+                    <i class='bx bx-camera'></i>
+                </div>
+                <h3>Photography </h3>
+                <span>21 Courses</span>
+
+                <a href="#" class="link-btn"></a>
+            </div>
+
+            <div class="single-categories-courses-box mb-30">
+                <div class="icon">
+                    <i class='bx bx-layer'></i>
+                </div>
+                <h3>Graphics Design</h3>
+                <span>58 Courses</span>
+
+                <a href="#" class="link-btn"></a>
+            </div>
+
+            <div class="single-categories-courses-box mb-30">
+                <div class="icon">
+                    <i class='bx bxs-flag-checkered'></i>
+                </div>
+                <h3>Web Language</h3>
+                <span>99 Courses</span>
+
+                <a href="#" class="link-btn"></a>
+            </div>
+
+            <div class="single-categories-courses-box mb-30">
+                <div class="icon">
+                    <i class='bx bx-health'></i>
+                </div>
+                <h3>Health & Fitness</h3>
+                <span>21 Courses</span>
+
+                <a href="#" class="link-btn"></a>
+            </div>
+
+            <div class="single-categories-courses-box mb-30">
+                <div class="icon">
+                    <i class='bx bx-line-chart'></i>
+                </div>
+                <h3>Business Studies</h3>
+                <span>49 Courses</span>
+
+                <a href="#" class="link-btn"></a>
+            </div>
+            {% endcomment %}
+        </div>
+    </div>
+
+    <div id="particles-js-circle-bubble-2"></div>
+</section>
+<!-- End Courses Categories Area -->
+
+<!-- Start Offer Area -->
+<section class="offer-area pt-100 jarallax" data-jarallax='{"speed": 0.3}'>
+    <div class="container">
+        <div class="section-title">
+            <span class="sub-title">Make Connections</span>
+            <h2>What We Offer For Growth</h2>
+            <p>We provide complete assistance in the journey of your career to achieve professional excellence.</p>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="single-offer-box">
+                    <div class="icon">
+                        <i class='bx bx-book-reader'></i>
+                    </div>
+                    <h3>Exclusive Courses</h3>
+                    <p>A wide range of courses is available for supporting your career.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="single-offer-box">
+                    <div class="icon">
+                        <i class='bx bx-target-lock'></i>
+                    </div>
+                    <h3>Professional Mentors</h3>
+                    <p>Dedicate and professional mentors for guiding you to victory.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-0 offset-md-3 offset-sm-3">
+                <div class="single-offer-box">
+                    <div class="icon">
+                        <i class='bx bxs-thermometer'></i>
+                    </div>
+                    <h3>Career Excellence</h3>
+                    <p>Shine bright in the path of your career and uncover your bright future.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Offer Area -->
+{% comment %}
+<!-- Start Partner Area -->
+<section class="partner-area pt-100">
+    <div class="container">
+        <div class="partner-slides owl-carousel owl-theme">
+            <div class="single-partner-item">
+                <a href="#" class="d-block">
+                   <img src="{% static 'web/img/partner/7.png' %}" alt="image">
+                </a>
+            </div>
+
+            <div class="single-partner-item">
+                <a href="#" class="d-block">
+                    <img src="{% static 'web/img/partner/8.png' %}" alt="image">
+                </a>
+            </div>
+
+            <div class="single-partner-item">
+                <a href="#" class="d-block">
+                    <img src="{% static 'web/img/partner/9.png' %}" alt="image">
+                </a>
+            </div>
+
+            <div class="single-partner-item">
+                <a href="#" class="d-block">
+                   <img src="{% static 'web/img/partner/10.png' %}" alt="image">
+                </a>
+            </div>
+
+            <div class="single-partner-item">
+                <a href="#" class="d-block">
+                    <img src="{% static 'web/img/partner/11.png' %}" alt="image">
+                </a>
+            </div>
+
+            <div class="single-partner-item">
+                <a href="#" class="d-block">
+                    <img src="{% static 'web/img/partner/12.png' %}" alt="image">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Partner Area -->
+{% endcomment %}
+
+
+<!-- Start Team Area -->
+<section class="team-area pt-100 pb-70">
+    <div class="container">
+        <div class="section-title">
+            <span class="sub-title">Make Connections</span>
+            <h2>Team of Instructors</h2>
+            <p>A teacher is always there behind the success of every student. Our professional instructors are dedicated to guiding you into your career growth.
+            </p>
+        </div>
+
+        <div class="team-slides owl-carousel owl-theme">
+            {% for instructor in instructors %}
+            <div class="single-instructor-box mb-30">
+                <div class="image">
+                    <img src="{{instructor.image.crop.580x610}}"alt="image">
+
+                    <!-- <ul class="social">
+                        <li><a href="#" target="_blank"><i class="bx bxl-facebook"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="bx bxl-twitter"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="bx bxl-linkedin"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="bx bxl-instagram"></i></a></li>
+                    </ul> -->
+                </div>
+
+                <div class="content">
+                    <h3><a >{{instructor.name}}</a></h3>
+                    <span>{{instructor.subject}}</span>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div id="particles-js-circle-bubble-3"></div>
+</section>
+<!-- End Team Area -->
+
+
+
+<!-- Start Become Instructor & Partner Area -->
+<section class="become-instructor-partner-area">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6 col-md-6">
+                <div class="become-instructor-partner-content bg-color">
+                    <h2>Become an Instructor</h2>
+                    <p>If you are talented in educating students British Academy is the perfect place for you.</p>
+                    <a href="#" class="default-btn"><i class='bx bx-plus-circle icon-arrow before'></i><span
+                            class="label">Apply Now</span><i class="bx bx-plus-circle icon-arrow after"></i></a>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6">
+                <div class="become-instructor-partner-image bg-image1 jarallax" data-jarallax='{"speed": 0.3}'>
+                    <img src="{% static 'web/img/become-instructor.jpg' %}" alt="image">
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6">
+                <div class="become-instructor-partner-image bg-image2 jarallax" data-jarallax='{"speed": 0.3}'>
+                    <img src="{% static 'web/img/become-partner.jpg' %}" alt="image">
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6">
+                <div class="become-instructor-partner-content">
+                    <h2>Become a student</h2>
+                    <p>If you are a learning enthusiast you are in right place for your best education.
+                    </p>
+                    <a href="{% url 'web:contact' %}" class="default-btn"><i class='bx bx-plus-circle icon-arrow before'></i><span
+                            class="label">Contact Us</span><i class="bx bx-plus-circle icon-arrow after"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Become Instructor & Partner Area -->
+
+
+
+<!-- Start Blog Area -->
+<section class="blog-area pt-100 pb-70">
+    <div class="container">
+        <div class="section-title text-left">
+            <span class="sub-title">Explore News</span>
+            <h2>Our Latest Insights</h2>
+            <a href="" class="default-btn"><i class='bx bx-book-reader icon-arrow before'></i><span
+                    class="label">Read All</span><i class="bx bx-book-reader icon-arrow after"></i></a>
+        </div>
+
+        <div class="blog-slides owl-carousel owl-theme">
+            {% for update in updates %}
+            <div class="single-blog-post mb-30">
+                <div class="post-image">
+                    <a href="{% url 'web:update_details' update.slug %}" class="d-block">
+                        
+                        <img src="{{update.image.crop.688x485}}" alt="image">
+                    </a>
+
+                    <!-- <div class="tag">
+                        <a href="#">Learning</a>
+                    </div> -->
+                </div>
+
+                <div class="post-content">
+                    <ul class="post-meta">
+                        <li><a href="{% url 'web:update_details' update.slug %}">{{update.date|date:"F d, Y"}}</a></li>
+                    </ul>
+                    <h3><a href="{% url 'web:update_details' update.slug %}" class="d-inline-block">{{update.title}}</a></h3>
+                    <a href="{% url 'web:update_details' update.slug %}" class="read-more-btn">Read More <i class='bx bx-right-arrow-alt'></i></a>
+                </div>
+            </div>
+            {% endfor %}
+
+
+           
+        </div>
+    </div>
+</section>
+<!-- End Blog Area -->
+
+{% endblock %}

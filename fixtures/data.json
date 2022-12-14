@@ -1,0 +1,1137 @@
+[
+    {
+        "model": "admin.logentry",
+        "pk": 1,
+        "fields": {
+            "action_time": "2022-02-13T14:09:30.446Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "1",
+            "object_repr": "Jhone smith",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 2,
+        "fields": {
+            "action_time": "2022-02-13T14:09:44.039Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "2",
+            "object_repr": "William",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 3,
+        "fields": {
+            "action_time": "2022-02-13T14:10:11.124Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "3",
+            "object_repr": "mujeeb rahaman",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 4,
+        "fields": {
+            "action_time": "2022-02-13T14:56:09.279Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "1",
+            "object_repr": "category one",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 5,
+        "fields": {
+            "action_time": "2022-02-13T14:56:22.449Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "2",
+            "object_repr": "category two",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 6,
+        "fields": {
+            "action_time": "2022-02-13T16:01:00.868Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "2",
+            "object_repr": "category two",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Slug\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 7,
+        "fields": {
+            "action_time": "2022-02-13T16:24:27.366Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "1",
+            "object_repr": "Raque Professional IT Expert Certificate Course",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 8,
+        "fields": {
+            "action_time": "2022-02-13T16:25:33.913Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "1",
+            "object_repr": "Raque Professional IT Expert Certificate Course",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 9,
+        "fields": {
+            "action_time": "2022-02-13T16:30:38.996Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "2",
+            "object_repr": "Optio nihil voluptas eum velit atque et ratione accusantium architecto quae illum ipsum",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 10,
+        "fields": {
+            "action_time": "2022-02-13T16:34:34.909Z",
+            "user": 1,
+            "content_type": 13,
+            "object_id": "1",
+            "object_repr": "Rosalina D. William",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 11,
+        "fields": {
+            "action_time": "2022-02-13T16:57:58.138Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "1",
+            "object_repr": "How to enhance education quality management system",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 12,
+        "fields": {
+            "action_time": "2022-02-13T17:00:30.434Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "2",
+            "object_repr": "How to enhance education quality management system",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 13,
+        "fields": {
+            "action_time": "2022-02-13T17:05:06.215Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "1",
+            "object_repr": "Raque Professional IT Expert Certificate Course",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Slug\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 14,
+        "fields": {
+            "action_time": "2022-02-13T17:05:14.211Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "2",
+            "object_repr": "Optio nihil voluptas eum velit atque et ratione accusantium architecto quae illum ipsum",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Slug\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 15,
+        "fields": {
+            "action_time": "2022-02-13T17:05:18.877Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "1",
+            "object_repr": "Raque Professional IT Expert Certificate Course",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Slug\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 16,
+        "fields": {
+            "action_time": "2022-02-13T18:11:24.757Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "1",
+            "object_repr": "International English Conference",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 17,
+        "fields": {
+            "action_time": "2022-02-13T18:11:53.012Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "2",
+            "object_repr": "UK Education Fair USA",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 18,
+        "fields": {
+            "action_time": "2022-02-13T18:16:17.718Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "1",
+            "object_repr": "International English Conference",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 19,
+        "fields": {
+            "action_time": "2022-02-13T18:16:21.660Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "1",
+            "object_repr": "International English Conference",
+            "action_flag": 2,
+            "change_message": "[]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 20,
+        "fields": {
+            "action_time": "2022-02-13T18:16:27.696Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "2",
+            "object_repr": "UK Education Fair USA",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 21,
+        "fields": {
+            "action_time": "2022-02-13T18:28:57.168Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "2",
+            "object_repr": "How to enhance  management system",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Title\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 22,
+        "fields": {
+            "action_time": "2022-02-13T18:42:44.749Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "1",
+            "object_repr": "Raque Professional IT Expert Certificate Course",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Category\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 23,
+        "fields": {
+            "action_time": "2022-02-13T19:03:50.184Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "1",
+            "object_repr": "Raque Professional IT Expert Certificate Course",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Category\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 24,
+        "fields": {
+            "action_time": "2022-02-13T19:05:31.724Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "2",
+            "object_repr": "Optio nihil voluptas eum velit atque et ratione accusantium architecto quae illum ipsum",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Category\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 25,
+        "fields": {
+            "action_time": "2022-02-14T05:52:54.165Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "1",
+            "object_repr": "Raque Professional IT Expert Certificate Course",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Content\"]}}]"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 1,
+        "fields": {
+            "name": "Can add log entry",
+            "content_type": 1,
+            "codename": "add_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 2,
+        "fields": {
+            "name": "Can change log entry",
+            "content_type": 1,
+            "codename": "change_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 3,
+        "fields": {
+            "name": "Can delete log entry",
+            "content_type": 1,
+            "codename": "delete_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 4,
+        "fields": {
+            "name": "Can view log entry",
+            "content_type": 1,
+            "codename": "view_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 5,
+        "fields": {
+            "name": "Can add permission",
+            "content_type": 2,
+            "codename": "add_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 6,
+        "fields": {
+            "name": "Can change permission",
+            "content_type": 2,
+            "codename": "change_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 7,
+        "fields": {
+            "name": "Can delete permission",
+            "content_type": 2,
+            "codename": "delete_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 8,
+        "fields": {
+            "name": "Can view permission",
+            "content_type": 2,
+            "codename": "view_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 9,
+        "fields": {
+            "name": "Can add group",
+            "content_type": 3,
+            "codename": "add_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 10,
+        "fields": {
+            "name": "Can change group",
+            "content_type": 3,
+            "codename": "change_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 11,
+        "fields": {
+            "name": "Can delete group",
+            "content_type": 3,
+            "codename": "delete_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 12,
+        "fields": {
+            "name": "Can view group",
+            "content_type": 3,
+            "codename": "view_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 13,
+        "fields": {
+            "name": "Can add user",
+            "content_type": 4,
+            "codename": "add_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 14,
+        "fields": {
+            "name": "Can change user",
+            "content_type": 4,
+            "codename": "change_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 15,
+        "fields": {
+            "name": "Can delete user",
+            "content_type": 4,
+            "codename": "delete_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 16,
+        "fields": {
+            "name": "Can view user",
+            "content_type": 4,
+            "codename": "view_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 17,
+        "fields": {
+            "name": "Can add content type",
+            "content_type": 5,
+            "codename": "add_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 18,
+        "fields": {
+            "name": "Can change content type",
+            "content_type": 5,
+            "codename": "change_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 19,
+        "fields": {
+            "name": "Can delete content type",
+            "content_type": 5,
+            "codename": "delete_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 20,
+        "fields": {
+            "name": "Can view content type",
+            "content_type": 5,
+            "codename": "view_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 21,
+        "fields": {
+            "name": "Can add session",
+            "content_type": 6,
+            "codename": "add_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 22,
+        "fields": {
+            "name": "Can change session",
+            "content_type": 6,
+            "codename": "change_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 23,
+        "fields": {
+            "name": "Can delete session",
+            "content_type": 6,
+            "codename": "delete_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 24,
+        "fields": {
+            "name": "Can view session",
+            "content_type": 6,
+            "codename": "view_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 25,
+        "fields": {
+            "name": "Can add category",
+            "content_type": 7,
+            "codename": "add_category"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 26,
+        "fields": {
+            "name": "Can change category",
+            "content_type": 7,
+            "codename": "change_category"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 27,
+        "fields": {
+            "name": "Can delete category",
+            "content_type": 7,
+            "codename": "delete_category"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 28,
+        "fields": {
+            "name": "Can view category",
+            "content_type": 7,
+            "codename": "view_category"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 29,
+        "fields": {
+            "name": "Can add course",
+            "content_type": 8,
+            "codename": "add_course"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 30,
+        "fields": {
+            "name": "Can change course",
+            "content_type": 8,
+            "codename": "change_course"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 31,
+        "fields": {
+            "name": "Can delete course",
+            "content_type": 8,
+            "codename": "delete_course"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 32,
+        "fields": {
+            "name": "Can view course",
+            "content_type": 8,
+            "codename": "view_course"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 33,
+        "fields": {
+            "name": "Can add event",
+            "content_type": 9,
+            "codename": "add_event"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 34,
+        "fields": {
+            "name": "Can change event",
+            "content_type": 9,
+            "codename": "change_event"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 35,
+        "fields": {
+            "name": "Can delete event",
+            "content_type": 9,
+            "codename": "delete_event"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 36,
+        "fields": {
+            "name": "Can view event",
+            "content_type": 9,
+            "codename": "view_event"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 37,
+        "fields": {
+            "name": "Can add feedback",
+            "content_type": 10,
+            "codename": "add_feedback"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 38,
+        "fields": {
+            "name": "Can change feedback",
+            "content_type": 10,
+            "codename": "change_feedback"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 39,
+        "fields": {
+            "name": "Can delete feedback",
+            "content_type": 10,
+            "codename": "delete_feedback"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 40,
+        "fields": {
+            "name": "Can view feedback",
+            "content_type": 10,
+            "codename": "view_feedback"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 41,
+        "fields": {
+            "name": "Can add testimonial",
+            "content_type": 11,
+            "codename": "add_testimonial"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 42,
+        "fields": {
+            "name": "Can change testimonial",
+            "content_type": 11,
+            "codename": "change_testimonial"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 43,
+        "fields": {
+            "name": "Can delete testimonial",
+            "content_type": 11,
+            "codename": "delete_testimonial"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 44,
+        "fields": {
+            "name": "Can view testimonial",
+            "content_type": 11,
+            "codename": "view_testimonial"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 45,
+        "fields": {
+            "name": "Can add update",
+            "content_type": 12,
+            "codename": "add_update"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 46,
+        "fields": {
+            "name": "Can change update",
+            "content_type": 12,
+            "codename": "change_update"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 47,
+        "fields": {
+            "name": "Can delete update",
+            "content_type": 12,
+            "codename": "delete_update"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 48,
+        "fields": {
+            "name": "Can view update",
+            "content_type": 12,
+            "codename": "view_update"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 49,
+        "fields": {
+            "name": "Can add instructor",
+            "content_type": 13,
+            "codename": "add_instructor"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 50,
+        "fields": {
+            "name": "Can change instructor",
+            "content_type": 13,
+            "codename": "change_instructor"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 51,
+        "fields": {
+            "name": "Can delete instructor",
+            "content_type": 13,
+            "codename": "delete_instructor"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 52,
+        "fields": {
+            "name": "Can view instructor",
+            "content_type": 13,
+            "codename": "view_instructor"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 53,
+        "fields": {
+            "name": "Can add contact",
+            "content_type": 14,
+            "codename": "add_contact"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 54,
+        "fields": {
+            "name": "Can change contact",
+            "content_type": 14,
+            "codename": "change_contact"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 55,
+        "fields": {
+            "name": "Can delete contact",
+            "content_type": 14,
+            "codename": "delete_contact"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 56,
+        "fields": {
+            "name": "Can view contact",
+            "content_type": 14,
+            "codename": "view_contact"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 57,
+        "fields": {
+            "name": "Can add subscriber",
+            "content_type": 15,
+            "codename": "add_subscriber"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 58,
+        "fields": {
+            "name": "Can change subscriber",
+            "content_type": 15,
+            "codename": "change_subscriber"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 59,
+        "fields": {
+            "name": "Can delete subscriber",
+            "content_type": 15,
+            "codename": "delete_subscriber"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 60,
+        "fields": {
+            "name": "Can view subscriber",
+            "content_type": 15,
+            "codename": "view_subscriber"
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 1,
+        "fields": {
+            "password": "pbkdf2_sha256$320000$mZ44xQnoFxeMhrIvVPMfIj$S1By/UIZeqpKspMQ5UdH352i7uYWRw2fRRdRJlwiTPQ=",
+            "last_login": "2022-02-14T05:52:27.093Z",
+            "is_superuser": true,
+            "username": "admin",
+            "first_name": "",
+            "last_name": "",
+            "email": "",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2022-02-13T13:01:41.744Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 1,
+        "fields": {
+            "app_label": "admin",
+            "model": "logentry"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 2,
+        "fields": {
+            "app_label": "auth",
+            "model": "permission"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 3,
+        "fields": {
+            "app_label": "auth",
+            "model": "group"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 4,
+        "fields": {
+            "app_label": "auth",
+            "model": "user"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 5,
+        "fields": {
+            "app_label": "contenttypes",
+            "model": "contenttype"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 6,
+        "fields": {
+            "app_label": "sessions",
+            "model": "session"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 7,
+        "fields": {
+            "app_label": "web",
+            "model": "category"
+        }
+    },
+    
+    
+    {
+        "model": "sessions.session",
+        "pk": "a4234cxxtia6m3nc3wiabkrhjifyyqr7",
+        "fields": {
+            "session_data": ".eJxVjMsOwiAQRf-FtSEwIg-X7vsNZGAGqRqalHZl_HfbpAvd3nPOfYuI61Lj2nmOI4mr0OL0uyXMT247oAe2-yTz1JZ5THJX5EG7HCbi1-1w_w4q9rrV5aw8ZMuhuGyVS-BLchrAOwcXBG09aOS8KbYQKmBDwZDyzgRriK34fAHN4DdQ:1nJFYF:tfEYKd2HZQ3ZglLDH49ivR4J02nk1cTk57Yte2UeYuw",
+            "expire_date": "2022-02-27T14:08:31.737Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "d1cs9q02n91ihj41t4zb89zmkvpci1w1",
+        "fields": {
+            "session_data": ".eJxVjMsOwiAQRf-FtSEwIg-X7vsNZGAGqRqalHZl_HfbpAvd3nPOfYuI61Lj2nmOI4mr0OL0uyXMT247oAe2-yTz1JZ5THJX5EG7HCbi1-1w_w4q9rrV5aw8ZMuhuGyVS-BLchrAOwcXBG09aOS8KbYQKmBDwZDyzgRriK34fAHN4DdQ:1nJUHj:nxICkqBzPtVpcmc7nKIYX-XFFVdGoAg3CBRP58HI5R8",
+            "expire_date": "2022-02-28T05:52:27.099Z"
+        }
+    },
+    {
+        "model": "web.testimonial",
+        "pk": 1,
+        "fields": {
+            "name": "Jhone smith",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+            "designation": "student",
+            "image": "testimonial/user4.jpg"
+        }
+    },
+    {
+        "model": "web.testimonial",
+        "pk": 2,
+        "fields": {
+            "name": "William",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "designation": "Founder",
+            "image": "testimonial/user3.jpg"
+        }
+    },
+    {
+        "model": "web.testimonial",
+        "pk": 3,
+        "fields": {
+            "name": "mujeeb rahaman",
+            "description": "Lorem ipsum dolor sit amet, consecte",
+            "designation": "Graphic Designer",
+            "image": "testimonial/user6.jpg"
+        }
+    },
+    {
+        "model": "web.update",
+        "pk": 1,
+        "fields": {
+            "title": "How to enhance education quality management system",
+            "summary": "Lorem Ipsum has been the industry's standard dummy text ever since",
+            "content": "<p>Lorem Ipsum has been the industry's standard dummy text ever sinceLorem Ipsum has been the industry's standard dummy text ever sinceLorem Ipsum has been the industry's standard dummy text ever sinceLorem Ipsum has been the industry's standard dummy text ever sinceLorem Ipsum has been the industry's standard dummy text ever sinceLorem Ipsum has been the industry's standard dummy text ever sinceLorem Ipsum has been the industry's standard dummy text ever sinceLorem Ipsum has been the industry's standard dummy text ever sinceLorem Ipsum has been the industry's standard dummy text ever sinceLorem Ipsum has been the industry's standard dummy text ever sinceLorem Ipsum has been the industry's standard dummy text ever sinceLorem Ipsum has been the industry's standard dummy text ever sinceLorem Ipsum has been the industry's standard dummy text ever sinceLorem Ipsum has been the industry's standard dummy text ever sinceLorem Ipsum has been the industry's standard dummy text ever since</p>",
+            "image": "Blogs/blog-img2.jpg",
+            "date": "2022-02-13",
+            "slug": "1"
+        }
+    },
+    {
+        "model": "web.update",
+        "pk": 2,
+        "fields": {
+            "title": "How to enhance  management system",
+            "summary": "Lorem Ipsum has been the industry's standard dummy text ever since",
+            "content": "<p>How to enhance education quality management systemHow to enhance education quality management systemHow to enhance education quality management systemHow to enhance education quality management systemHow to enhance education quality management system</p>\r\n<p>How to enhance education quality management systemHow to enhance education quality management systemHow to enhance education quality management systemHow to enhance education quality management systemHow to enhance education quality management systemHow to enhance education quality management systemHow to enhance education quality management systemHow to enhance education quality management systemHow to enhance education quality management systemHow to enhance education quality management systemHow to enhance education quality management systemHow to enhance education quality management system</p>\r\n<p>How to enhance education quality management systemHow to enhance education quality management systemHow to enhance education quality management systemHow to enhance education quality management systemHow to enhance education quality management systemHow to enhance education quality management systemHow to enhance education quality management system</p>",
+            "image": "Blogs/events-img3.jpg",
+            "date": "2022-02-13",
+            "slug": "how-to-enhance-education-quality-management-system"
+        }
+    },
+    {
+        "model": "web.event",
+        "pk": 1,
+        "fields": {
+            "title": "International English Conference",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "date": "2022-02-13",
+            "image": "events/events-img2.jpg",
+            "time": "18:11:23"
+        }
+    },
+    {
+        "model": "web.event",
+        "pk": 2,
+        "fields": {
+            "title": "UK Education Fair USA",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+            "date": "2022-02-13",
+            "image": "events/blog-img1.jpg",
+            "time": "18:11:51"
+        }
+    },
+    {
+        "model": "web.feedback",
+        "pk": 1,
+        "fields": {
+            "name": "ui",
+            "email": "a@ti.com",
+            "message": "ytyutuytuyg"
+        }
+    },
+    {
+        "model": "web.category",
+        "pk": 1,
+        "fields": {
+            "title": "category one",
+            "icon": "category/business-shape7.png",
+            "slug": "1",
+            "is_active": true
+        }
+    },
+    {
+        "model": "web.category",
+        "pk": 2,
+        "fields": {
+            "title": "category two",
+            "icon": "category/business-shape8.png",
+            "slug": "2",
+            "is_active": true
+        }
+    },
+    {
+        "model": "web.course",
+        "pk": 1,
+        "fields": {
+            "category": 1,
+            "title": "Raque Professional IT Expert Certificate Course",
+            "summary": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.",
+            "image": "courses/blog-img3.jpg",
+            "content": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>\r\n<p>&nbsp;</p>\r\n<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>\r\n<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>",
+            "students": 10,
+            "length": "1 month",
+            "effort": "2hours per day",
+            "institution": "British Academy",
+            "subject": "development",
+            "language": "English",
+            "certificate": "yes",
+            "price": "300",
+            "slug": "1",
+            "is_active": true
+        }
+    },
+    {
+        "model": "web.course",
+        "pk": 2,
+        "fields": {
+            "category": 2,
+            "title": "Optio nihil voluptas eum velit atque et ratione accusantium architecto quae illum ipsum",
+            "summary": "A sed tenetur explicabo Reprehenderit vel cillum aspernatur",
+            "image": "courses/courses-img2.jpg",
+            "content": "<div>\r\n<h2>What is Lorem Ipsum?</h2>\r\n<p><strong>Lorem Ipsum</strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>\r\n</div>\r\n<div>\r\n<h2>Why do we use it?</h2>\r\n<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>\r\n</div>",
+            "students": 64,
+            "length": "Ut anim et est nesciunt laborum Perspiciatis ea rerum cumque ut quisquam qui sed illo eum laboris quia officia",
+            "effort": "Sed quibusdam laborum in consequatur Duis fugiat qui dolore reprehenderit",
+            "institution": "Non expedita fugiat in aut nihil omnis optio est",
+            "subject": "Laboriosam et quaerat dolore nulla velit at voluptates",
+            "language": "Velit eiusmod in nesciunt ut",
+            "certificate": "No",
+            "price": "764",
+            "slug": "2",
+            "is_active": true
+        }
+    },
+    {
+        "model": "web.instructor",
+        "pk": 1,
+        "fields": {
+            "name": "Rosalina D. William",
+            "subject": 1,
+            "image": "testimonial/man.png"
+        }
+    },
+    {
+        "model": "web.contact",
+        "pk": 1,
+        "fields": {
+            "name": "sdad",
+            "email": "a@gmail.com",
+            "phone": "3212114343",
+            "subject": "cssadd",
+            "message": "asdadadasdada"
+        }
+    },
+    {
+        "model": "web.contact",
+        "pk": 2,
+        "fields": {
+            "name": "gug",
+            "email": "A@gnail.com",
+            "phone": "xcxzczc",
+            "subject": "vvcxcvx",
+            "message": "xzcxzczxc"
+        }
+    }
+]

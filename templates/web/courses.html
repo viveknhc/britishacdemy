@@ -1,0 +1,196 @@
+{% extends 'web/base.html' %}
+{% load static %}
+{% block content %}
+
+
+<!-- Start Page Title Area -->
+<div class="page-title-area page-title-style-two item-bg1 jarallax" data-jarallax='{"speed": 0.3}'>
+    <div class="container">
+        <div class="page-title-content">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li>{{courses_category.title}}</li>
+            </ul>
+            <h2>Courses</h2>
+        </div>
+    </div>
+</div>
+<!-- End Page Title Area -->
+
+<!-- Start Courses Area -->
+<section class="courses-area ptb-100">
+    <div class="container">
+
+        <div class="row">
+            {% for course in courses %}
+            <div class="col-lg-4 col-md-6">
+                <div class="single-courses-box mb-30">
+                    <div class="courses-image">
+                        <a href="{% url 'web:course_details' course.slug %}" class="d-block">
+                            <img src="{{course.image.crop.600x485}}" alt="image"></a>
+
+                        <div class="courses-tag">
+                            <a href="#" class="d-block">{{course.category.title}}</a>
+                        </div>
+                    </div>
+
+                    <div class="courses-content">
+                        <!-- <div class="course-author d-flex align-items-center">
+                            <img data-cfsrc="{% static 'web/img/user1.jpg' %}" class="rounded-circle mr-2" alt="image"
+                                style="display:none;visibility:hidden;"><img src="{% static 'web/img/user1.jpg' %}"
+                                class="rounded-circle mr-2" alt="image">
+                            <span>Steven Smith</span>
+                        </div> -->
+
+                        <h3><a href="{% url 'web:course_details' course.slug %}"
+                                class="d-inline-block">{{course.title}}</a></h3>
+                    </div>
+
+                    <div class="courses-box-footer">
+                        <ul>
+                            <li class="students-number">
+                                <i class='bx bx-user'></i> {{course.students}} students
+                            </li>
+
+                            <li class="courses-lesson">
+                                <i class='bx bx-book-open'></i> {{ course.lessons }}l lessons
+                            </li>
+
+                            <!-- <li class="courses-price">
+                                &#x20B9;{{course.price}}
+                            </li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+
+            {% comment %}
+            <div class="col-lg-4 col-md-6">
+                <div class="single-courses-box mb-30">
+                    <div class="courses-image">
+                        <a href="{% url 'web:course_details' course.slug %}" class="d-block">
+                            <img src="{{course.image.crop.600x485}}" alt="image"></a>
+
+                        <div class="courses-tag">
+                            <a href="#" class="d-block">Design</a>
+                        </div>
+                    </div>
+
+                    <div class="courses-content">
+                        <div class="course-author d-flex align-items-center">
+                            <img data-cfsrc="{% static 'web/img/user2.jpg' %}" class="rounded-circle mr-2" alt="image"
+                                style="display:none;visibility:hidden;"><img src="{% static 'web/img/user2.jpg' %}"
+                                class="rounded-circle mr-2" alt="image">
+                            <span>Sarah Taylor</span>
+                        </div>
+
+                        <h3><a href="single-courses.html" class="d-inline-block">Certified Graphic Design with Free
+                                Project Course</a></h3>
+
+                        <div class="courses-rating">
+                            <div class="review-stars-rated">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star-half'></i>
+                            </div>
+
+                            <div class="rating-total">
+                                4.5 (2 rating)
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="courses-box-footer">
+                        <ul>
+                            <li class="students-number">
+                                <i class='bx bx-user'></i> 15 students
+                            </li>
+
+                            <li class="courses-lesson">
+                                <i class='bx bx-book-open'></i> 10 lessons
+                            </li>
+
+                            <li class="courses-price">
+                                &#8377;250
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="single-courses-box mb-30">
+                    <div class="courses-image">
+                        <a href="single-courses.html" class="d-block"><img
+                                data-cfsrc="{% static 'web/img/courses/3.jpg' %}" alt="image"
+                                style="display:none;visibility:hidden;"><img src="{% static 'web/img/courses/3.jpg' %}"
+                                alt="image"></a>
+
+                        <div class="courses-tag">
+                            <a href="#" class="d-block">Development</a>
+                        </div>
+                    </div>
+
+                    <div class="courses-content">
+                        <div class="course-author d-flex align-items-center">
+                            <img data-cfsrc="{% static 'web/img/user3.jpg' %}" class="rounded-circle mr-2" alt="image"
+                                style="display:none;visibility:hidden;"><img src="{% static 'web/img/user3.jpg' %}"
+                                class="rounded-circle mr-2" alt="image">
+                            <span>James Anderson</span>
+                        </div>
+
+                        <h3><a href="single-courses.html" class="d-inline-block">Photography Crash Course for
+                                Photographer</a></h3>
+
+                        <div class="courses-rating">
+                            <div class="review-stars-rated">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bx-star'></i>
+                            </div>
+
+                            <div class="rating-total">
+                                4.0 (1 rating)
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="courses-box-footer">
+                        <ul>
+                            <li class="students-number">
+                                <i class='bx bx-user'></i> 5 students
+                            </li>
+
+                            <li class="courses-lesson">
+                                <i class='bx bx-book-open'></i> 5 lessons
+                            </li>
+
+                            <li class="courses-price">
+                                &#8377;150
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="pagination-area text-center">
+                    <span class="page-numbers current" aria-current="page">1</span>
+                    <a href="#" class="page-numbers">2</a>
+                    <a href="#" class="page-numbers">3</a>
+                    <a href="#" class="page-numbers">4</a>
+                    <a href="#" class="page-numbers">5</a>
+                    <a href="#" class="next page-numbers"><i class='bx bx-chevron-right'></i></a>
+                </div>
+            </div>
+            {% endcomment %}
+        </div>
+    </div>
+</section>
+<!-- End Courses Area -->
+{% endblock %}

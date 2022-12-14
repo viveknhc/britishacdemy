@@ -1,0 +1,367 @@
+{% extends 'web/base.html' %}
+{% load static %}
+{% block content %}
+
+
+
+<!-- Start Page Title Area -->
+<div class="page-title-area item-bg1 jarallax" data-jarallax='{"speed": 0.3}'>
+    <div class="container">
+        <div class="page-title-content">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="">Courses</a></li>
+                <li>{{course.title}}</li>
+            </ul>
+            <h2>Courses</h2>
+        </div>
+    </div>
+</div>
+<!-- End Page Title Area -->
+
+
+<!-- Start Courses Details Area -->
+<section class="courses-details-area pt-100 pb-70">
+    <div class="container">
+        <div class="courses-details-header">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <div class="courses-title">
+                        <h2>{{course.title}}</h2>
+                        <p>{{course.summary}}</p>
+                    </div>
+
+                    <div class="courses-meta">
+                        <ul>
+                            <li>
+                                <i class='bx bx-folder-open'></i>
+                                <span>Category</span>
+                                <a href="#">{{course.category.title}}</a>
+                            </li>
+                            <li>
+                                <i class='bx bx-group'></i>
+                                <span>Students Enrolled</span>
+                                <a href="#">{{course.students}}</a>
+                            </li>
+                            <!-- <li>
+                                <i class='bx bx-calendar'></i>
+                                <span>Last Updated</span>
+                                <a href="#">01/14/2021</a>
+                            </li> -->
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="courses-price">
+                        <div class="courses-review">
+                            <!-- <div class="review-stars">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                            </div> -->
+                            <!-- <span class="reviews-total d-inline-block">(2 reviews)</span> -->
+                        </div>
+
+                        <div class="price">&#x20B9;{{course.price}}</div>
+                        <a href="#" class="default-btn"><i class='bx bx-paper-plane icon-arrow before'></i><span
+                                class="label">Buy Course</span><i class="bx bx-paper-plane icon-arrow after"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="courses-details-image text-center">
+                    <img src="{{course.image.crop.600x485}}" alt="image">
+                </div>
+
+                <div class="courses-details-desc">
+                    <p>{{course.content|safe}}</p>
+                    {% comment %}
+                    <div class="courses-author">
+                        <div class="author-profile-header"></div>
+                        <div class="author-profile">
+                            <div class="author-profile-title">
+                                <img data-cfsrc="{% static 'web/img/user1.jpg' %}" class="shadow-sm rounded-circle"
+                                    alt="image" style="display:none;visibility:hidden;"><img
+                                    src="{% static 'web/img/user1.jpg' %}" class="shadow-sm rounded-circle" alt="image">
+
+                                <div class="author-profile-title-details d-flex justify-content-between">
+                                    <div class="author-profile-details">
+                                        <h4>James Anderson</h4>
+                                        <span class="d-block">Photographer, Author, Teacher</span>
+                                    </div>
+
+                                    <div class="author-profile-raque-profile">
+                                        <a href="single-instructor.html" class="d-inline-block">View Profile on
+                                            Raque</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>James Anderson is a celebrated photographer, author, and teacher who brings passion to
+                                everything he does.</p>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s.</p>
+                        </div>
+                    </div>
+
+                    <div class="courses-review-comments">
+                        <h3>3 Reviews</h3>
+
+                        <div class="user-review">
+                            <img data-cfsrc="{% static 'web/img/user1.jpg' %}" alt="image"
+                                style="display:none;visibility:hidden;"><img src="{% static 'web/img/user1.jpg' %}"
+                                alt="image">
+
+                            <div class="review-rating">
+                                <div class="review-stars">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </div>
+
+                                <span class="d-inline-block">James Anderson</span>
+                            </div>
+
+                            <span class="d-block sub-comment">Excellent</span>
+                            <p>Very well built theme, couldn't be happier with it. Can't wait for future updates to see
+                                what else they add in.</p>
+                        </div>
+
+                        <div class="user-review">
+                            <img data-cfsrc="{% static 'web/img/user2.jpg' %}" alt="image"
+                                style="display:none;visibility:hidden;"><img src="{% static 'web/img/user2.jpg' %}"
+                                alt="image">
+
+                            <div class="review-rating">
+                                <div class="review-stars">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </div>
+
+                                <span class="d-inline-block">Sarah Taylor</span>
+                            </div>
+
+                            <span class="d-block sub-comment">Video Quality!</span>
+                            <p>Was really easy to implement and they quickly answer my additional questions!</p>
+                        </div>
+
+                        <div class="user-review">
+                            <img data-cfsrc="{% static 'web/img/user3.jpg' %}" alt="image"
+                                style="display:none;visibility:hidden;"><img src="{% static 'web/img/user3.jpg' %}"
+                                alt="image">
+
+                            <div class="review-rating">
+                                <div class="review-stars">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </div>
+
+                                <span class="d-inline-block">David Warner</span>
+                            </div>
+
+                            <span class="d-block sub-comment">Perfect Coding!</span>
+                            <p>Stunning design, very dedicated crew who welcome new ideas suggested by customers, nice
+                                support.</p>
+                        </div>
+                    </div>
+                    {% endcomment %}
+
+                </div>
+
+                <div class="related-courses">
+                    <h3>Other Courses</h3>
+
+                    <div class="row">
+                        {% for course in courses %}
+                        <div class="col-lg-6 col-md-6">
+                            <div class="single-courses-box mb-30">
+                                <div class="courses-image">
+                                    <a href="{% url 'web:course_details' course.slug %}" class="d-block">
+                                        <img src="{% static 'web/img/courses/1.jpg' %}" alt="image"></a>
+
+                                    <div class="courses-tag">
+                                        <a href="#" class="d-block">{{course.category}}</a>
+                                    </div>
+                                </div>
+
+                                <div class="courses-content">
+                                    <!-- <div class="course-author d-flex align-items-center">
+                                        <img data-cfsrc="{% static 'web/img/user1.jpg' %}" class="rounded-circle mr-2"
+                                            alt="image" style="display:none;visibility:hidden;"><img
+                                            src="{% static 'web/img/user1.jpg' %}" class="rounded-circle mr-2"
+                                            alt="image">
+                                        <span>Steven Smith</span>
+                                    </div> -->
+
+                                    <h3><a href="{% url 'web:course_details' course.slug %}"
+                                            class="d-inline-block">{{course.title}}</a></h3>
+
+                                    <!-- <div class="courses-rating">
+                                        <div class="review-stars-rated">
+                                            <i class='bx bxs-star'></i>
+                                            <i class='bx bxs-star'></i>
+                                            <i class='bx bxs-star'></i>
+                                            <i class='bx bxs-star'></i>
+                                            <i class='bx bxs-star'></i>
+                                        </div>
+
+                                        <div class="rating-total">
+                                            5.0 (1 rating)
+                                        </div>
+                                    </div> -->
+                                </div>
+
+                                <div class="courses-box-footer">
+                                    <ul>
+                                        <li class="students-number">
+                                            <i class='bx bx-user'></i> {{course.students}} students
+                                        </li>
+
+                                        <li class="courses-lesson">
+                                            <i class='bx bx-book-open'></i> 6 lessons
+                                        </li>
+
+                                        <li class="courses-price">
+                                            &#x20B9;{{course.price}}
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="courses-sidebar-information">
+                    <ul>
+                        <li>
+                            <span><i class='bx bx-group'></i> Students:</span>
+                            {{course.students}}
+                        </li>
+                        <li>
+                            <span><i class='bx bx-time'></i> Length:</span>
+                            {{course.length}}
+                        </li>
+                        <li>
+                            <span><i class='bx bx-tachometer'></i> Effort:</span>
+                            {{course.effort}}
+                        </li>
+                        <li>
+                            <span><i class='bx bxs-institution'></i> Institution:</span>
+                            <a href="#" class="d-inline-block">{{course.institution}}</a>
+                        </li>
+                        <li>
+                            <span><i class='bx bxs-graduation'></i> Subject:</span>
+                            {{course.subject}}
+                        </li>
+
+                        <li>
+                            <span><i class='bx bx-support'></i> Language:</span>
+                            {{course.language}}
+                        </li>
+
+                        <li>
+                            <span><i class='bx bx-certification'></i> Certificate:</span>
+                            {{course.certificate}}
+                        </li>
+                    </ul>
+                </div>
+                {% comment %}
+                <div class="courses-sidebar-syllabus">
+                    <h3>Course Syllabus</h3>
+                    <span class="chapter">Chapter 1</span>
+                    <h4>Lessons</h4>
+
+                    <div class="courses-list">
+                        <ul>
+                            <li>
+                                Introduction
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="number">1.</span> Secret 1: Sell The Problem, Not The Solution (14:37)
+                                    <span class="free-lesson">Free</span>
+                                </a>
+                            </li>
+                            <li>
+                                Quiz - Secret 1: Sell The Problem, Not The Solution
+                            </li>
+                            <li>
+                                <span class="number">2.</span> Secret 2: Think Like a Magazine, Not a Salesman (4:30)
+                            </li>
+                            <li>
+                                Quiz - Secret 2: Think Like a Magazine, Not a Salesman
+                            </li>
+                            <li>
+                                <span class="number">3.</span> Secret 3: Content Is King, but Consistency Is Queen
+                                (3:56)
+                            </li>
+                            <li>
+                                Quiz - Secret 3: Content Is King, but Consistency Is Queen
+                            </li>
+                            <li>
+                                <span class="number">4.</span> Secret 4: Punch Above Your Weight Class (11:00)
+                            </li>
+                            <li>
+                                <span class="number">5.</span> Secret 5: Ethically Steal Your Competitors' Customers
+                                (8:12)
+                            </li>
+                            <li>
+                                <span class="number">6.</span> Secret 6: Bulid an Audience By Borrowing (10:25)
+                            </li>
+                            <li>
+                                Quiz - Secret 6: Bulid an Audience By Borrowing
+                            </li>
+                            <li>
+                                <span class="number">7.</span> Secret 7: Be a Shadow, Not a Ghost (5:19)
+                            </li>
+                            <li>
+                                <span class="number">8.</span> Bonus: Tips to Be a 5 Stars Freelancer (16:07)
+                            </li>
+                            <li>
+                                <span class="number">9.</span> Closing Thoughts (3:15)
+                            </li>
+                            <li>
+                                Quiz - Secret 7: Be a Shadow, Not a Ghost
+                            </li>
+                        </ul>
+                    </div>
+
+                    <span class="chapter">Chapter 2</span>
+                    <h4>Final Quiz</h4>
+
+                    <div class="courses-list">
+                        <ul>
+                            <li>
+                                Final Quiz
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                {% endcomment %}
+
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Courses Details Area -->
+
+{% endblock %}
