@@ -1,0 +1,427 @@
+{% extends 'web/base.html' %}
+{% load static %}
+{% block content %}
+
+
+
+<!-- Start Page Title Area -->
+<div class="page-title-area item-bg3 jarallax" data-jarallax='{"speed": 0.3}'>
+    <div class="container">
+        <div class="page-title-content">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li>Level Test</li>
+            </ul>
+            <h2>
+                Level Test
+            </h2>
+        </div>
+    </div>
+</div>
+<!-- End Page Title Area -->
+
+
+
+<section class="about-area ptb-100 pt-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-12">
+                <div class="about-content">
+                    <span class="sub-title">Don't Know which Course to choose?</span>
+                    <h2>Take The Level Test <br>
+                        And Find The Right Course For You
+                    </h2>
+                    <h6>Discover your level of fluency with our English level test.
+                    </h6>
+
+
+                    <div class="features-text">
+                        <h5><i class="bx bx-planet"></i>Answer the questions to find where you stand.</h5>
+
+                    </div>
+
+                    <a href="https://wa.me/919747513123?text=Hi,%20I%20would%20like%20to%20take%20the%20level%20test%20" class="default-btn"><i class="bx bx-plus-circle icon-arrow before"></i><span
+                            class="label">Take the test</span><i class="bx bx-plus-circle icon-arrow after"></i></a>
+
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-12">
+                <div class="about-image">
+                    <img src="/static/web/img/about/1.jpg" class="shadow" alt="image">
+                    <img src="/static/web/img/about/2.jpg" class="shadow" alt="image">
+                </div>
+            </div>
+
+
+        </div>
+        {% comment %}
+        <div class="about-inner-area">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="about-text">
+                        <h3>Online Courses</h3>
+                        <p>Best rate online courses for securing your career growth and future.
+                        </p>
+
+                        <ul class="features-list">
+                            <li><i class="bx bx-check"></i>Language classes &amp; IELTS</li>
+                            <li><i class="bx bx-check"></i> Medical coding </li>
+                            <li><i class="bx bx-check"></i> Graphic designing</li>
+                            <li><i class="bx bx-check"></i> Digital marketing</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="about-text">
+                        <h3>Expert Instruction</h3>
+                        <p>Best quality instructions for your professional excellence.
+                        </p>
+
+                        <ul class="features-list">
+                            <li><i class="bx bx-check"></i> Best syllabus</li>
+                            <li><i class="bx bx-check"></i> Better methods</li>
+                            <li><i class="bx bx-check"></i> Finest strategies</li>
+                            <li><i class="bx bx-check"></i> Creating results</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-0 offset-md-3 offset-sm-3">
+                    <div class="about-text">
+                        <h3>Professional Mentors
+                        </h3>
+                        <p>Dedicated and qualified mentors for your best education.
+                        </p>
+
+                        <ul class="features-list">
+                            <li><i class="bx bx-check"></i> Skilled mentors</li>
+                            <li><i class="bx bx-check"></i> Proper monitoring</li>
+                            <li><i class="bx bx-check"></i> Secure future</li>
+                            <li><i class="bx bx-check"></i> Best learning experience</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {% endcomment %}
+    </div>
+</section>
+
+
+
+
+
+
+
+<!-- Start Blog Area -->
+<section class="blog-area ptb-100">
+    <div class="container">
+        <div class="row">
+            {% for update in updates %}
+            <div class="col-lg-4 col-md-6">
+                <div class="single-blog-post mb-30">
+                    <div class="post-image">
+                        <a href="{% url 'web:update_details' update.slug %}" class="d-block">
+
+                            <img src="{{update.image.crop.688x485}}" alt="image">
+                        </a>
+
+
+                    </div>
+
+                    <div class="post-content">
+                        <ul class="post-meta">
+
+                            <li><a href="{% url 'web:update_details' update.slug %}">{{update.date|date:"F d, Y"}}</a>
+                            </li>
+                        </ul>
+                        <h3><a href="{% url 'web:update_details' update.slug %}"
+                                class="d-inline-block">{{update.title}}</a></h3>
+                        <a href="{% url 'web:update_details' update.slug %}" class="read-more-btn">Read More <i
+                                class='bx bx-right-arrow-alt'></i></a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+
+
+
+
+            {% comment %}
+            <div class="col-lg-4 col-md-6">
+                <div class="single-blog-post mb-30">
+                    <div class="post-image">
+                        <a href="single-blog.html" class="d-block">
+                            <img data-cfsrc="{% static 'web/img/blog/2.jpg' %}" alt="image"
+                                style="display:none;visibility:hidden;"><img src="{% static 'web/img/blog/2.jpg' %}"
+                                alt="image">
+                        </a>
+
+                        <div class="tag">
+                            <a href="#">Education</a>
+                        </div>
+                    </div>
+
+                    <div class="post-content">
+                        <ul class="post-meta">
+                            <li class="post-author">
+                                <img data-cfsrc="{% static 'web/img/user2.jpg' %}"
+                                    class="d-inline-block rounded-circle mr-2" alt="image"
+                                    style="display:none;visibility:hidden;"><img src="{% static 'web/img/user2.jpg' %}"
+                                    class="d-inline-block rounded-circle mr-2" alt="image">
+                                By: <a href="#" class="d-inline-block">Lina D'Souja</a>
+                            </li>
+                            <li><a href="#">August 29, 2021</a></li>
+                        </ul>
+                        <h3><a href="single-blog.html" class="d-inline-block">Most Popular Education Posts Of The Week
+                                20-26 Aug</a></h3>
+                        <a href="#" class="read-more-btn">Read More <i class='bx bx-right-arrow-alt'></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="single-blog-post mb-30">
+                    <div class="post-image">
+                        <a href="single-blog.html" class="d-block">
+                            <img data-cfsrc="{% static 'web/img/blog/3.jpg' %}" alt="image"
+                                style="display:none;visibility:hidden;"><img src="{% static 'web/img/blog/3.jpg' %}"
+                                alt="image">
+                        </a>
+
+                        <div class="tag">
+                            <a href="#">Management</a>
+                        </div>
+                    </div>
+
+                    <div class="post-content">
+                        <ul class="post-meta">
+                            <li class="post-author">
+                                <img data-cfsrc="{% static 'web/img/user3.jpg' %}"
+                                    class="d-inline-block rounded-circle mr-2" alt="image"
+                                    style="display:none;visibility:hidden;"><img src="{% static 'web/img/user3.jpg' %}"
+                                    class="d-inline-block rounded-circle mr-2" alt="image">
+                                By: <a href="#" class="d-inline-block">David Malan</a>
+                            </li>
+                            <li><a href="#">August 28, 2021</a></li>
+                        </ul>
+                        <h3><a href="single-blog.html" class="d-inline-block">How to enhance education quality
+                                management system</a></h3>
+                        <a href="#" class="read-more-btn">Read More <i class='bx bx-right-arrow-alt'></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="single-blog-post mb-30">
+                    <div class="post-image">
+                        <a href="single-blog.html" class="d-block">
+                            <img data-cfsrc="{% static 'web/img/blog/4.jpg' %}" alt="image"
+                                style="display:none;visibility:hidden;"><img src="{% static 'web/img/blog/4.jpg' %}"
+                                alt="image">
+                        </a>
+
+                        <div class="tag">
+                            <a href="#">Ideas</a>
+                        </div>
+                    </div>
+
+                    <div class="post-content">
+                        <ul class="post-meta">
+                            <li class="post-author">
+                                <img data-cfsrc="{% static 'web/img/user5.jpg' %}"
+                                    class="d-inline-block rounded-circle mr-2" alt="image"
+                                    style="display:none;visibility:hidden;"><img src="{% static 'web/img/user5.jpg' %}"
+                                    class="d-inline-block rounded-circle mr-2" alt="image">
+                                By: <a href="#" class="d-inline-block">David Warner</a>
+                            </li>
+                            <li><a href="#">August 27, 2021</a></li>
+                        </ul>
+                        <h3><a href="single-blog.html" class="d-inline-block">Global education: Ideas for the way move
+                                forward</a></h3>
+                        <a href="#" class="read-more-btn">Read More <i class='bx bx-right-arrow-alt'></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="single-blog-post mb-30">
+                    <div class="post-image">
+                        <a href="single-blog.html" class="d-block">
+                            <img data-cfsrc="{% static 'web/img/blog/5.jpg' %}" alt="image"
+                                style="display:none;visibility:hidden;"><img src="{% static 'web/img/blog/5.jpg' %}"
+                                alt="image">
+                        </a>
+
+                        <div class="tag">
+                            <a href="#">Workforce</a>
+                        </div>
+                    </div>
+
+                    <div class="post-content">
+                        <ul class="post-meta">
+                            <li class="post-author">
+                                <img data-cfsrc="{% static 'web/img/user6.jpg' %}"
+                                    class="d-inline-block rounded-circle mr-2" alt="image"
+                                    style="display:none;visibility:hidden;"><img src="{% static 'web/img/user6.jpg' %}"
+                                    class="d-inline-block rounded-circle mr-2" alt="image">
+                                By: <a href="#" class="d-inline-block">Olivar Waise</a>
+                            </li>
+                            <li><a href="#">August 26, 2021</a></li>
+                        </ul>
+                        <h3><a href="single-blog.html" class="d-inline-block">New report reimagines the broader
+                                education workforce</a></h3>
+                        <a href="#" class="read-more-btn">Read More <i class='bx bx-right-arrow-alt'></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="single-blog-post mb-30">
+                    <div class="post-image">
+                        <a href="single-blog.html" class="d-block">
+                            <img data-cfsrc="{% static 'web/img/blog/6.jpg' %}" alt="image"
+                                style="display:none;visibility:hidden;"><img src="{% static 'web/img/blog/6.jpg' %}"
+                                alt="image">
+                        </a>
+
+                        <div class="tag">
+                            <a href="#">Education</a>
+                        </div>
+                    </div>
+
+                    <div class="post-content">
+                        <ul class="post-meta">
+                            <li class="post-author">
+                                <img data-cfsrc="{% static 'web/img/user2.jpg' %}"
+                                    class="d-inline-block rounded-circle mr-2" alt="image"
+                                    style="display:none;visibility:hidden;"><img src="{% static 'web/img/user2.jpg' %}"
+                                    class="d-inline-block rounded-circle mr-2" alt="image">
+                                By: <a href="#" class="d-inline-block">Lina D'Souja</a>
+                            </li>
+                            <li><a href="#">August 29, 2021</a></li>
+                        </ul>
+                        <h3><a href="single-blog.html" class="d-inline-block">What’s Going On in This Picture? | Jan.
+                                13, 2021</a></h3>
+                        <a href="#" class="read-more-btn">Read More <i class='bx bx-right-arrow-alt'></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="single-blog-post mb-30">
+                    <div class="post-image">
+                        <a href="single-blog.html" class="d-block">
+                            <img data-cfsrc="{% static 'web/img/blog/7.jpg' %}" alt="image"
+                                style="display:none;visibility:hidden;"><img src="{% static 'web/img/blog/7.jpg' %}"
+                                alt="image">
+                        </a>
+
+                        <div class="tag">
+                            <a href="#">Learning</a>
+                        </div>
+                    </div>
+
+                    <div class="post-content">
+                        <ul class="post-meta">
+                            <li class="post-author">
+                                <img data-cfsrc="{% static 'web/img/user1.jpg' %}"
+                                    class="d-inline-block rounded-circle mr-2" alt="image"
+                                    style="display:none;visibility:hidden;"><img src="{% static 'web/img/user1.jpg' %}"
+                                    class="d-inline-block rounded-circle mr-2" alt="image">
+                                By: <a href="#" class="d-inline-block">Steven Smith</a>
+                            </li>
+                            <li><a href="#">August 30, 2021</a></li>
+                        </ul>
+                        <h3><a href="single-blog.html" class="d-inline-block">Connecting Math and Science to Reading and
+                                Writing</a></h3>
+                        <a href="#" class="read-more-btn">Read More <i class='bx bx-right-arrow-alt'></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="single-blog-post mb-30">
+                    <div class="post-image">
+                        <a href="single-blog.html" class="d-block">
+                            <img data-cfsrc="{% static 'web/img/blog/8.jpg' %}" alt="image"
+                                style="display:none;visibility:hidden;"><img src="{% static 'web/img/blog/8.jpg' %}"
+                                alt="image">
+                        </a>
+
+                        <div class="tag">
+                            <a href="#">Education</a>
+                        </div>
+                    </div>
+
+                    <div class="post-content">
+                        <ul class="post-meta">
+                            <li class="post-author">
+                                <img data-cfsrc="{% static 'web/img/user2.jpg' %}"
+                                    class="d-inline-block rounded-circle mr-2" alt="image"
+                                    style="display:none;visibility:hidden;"><img src="{% static 'web/img/user2.jpg' %}"
+                                    class="d-inline-block rounded-circle mr-2" alt="image">
+                                By: <a href="#" class="d-inline-block">Lina D'Souja</a>
+                            </li>
+                            <li><a href="#">August 29, 2021</a></li>
+                        </ul>
+                        <h3><a href="single-blog.html" class="d-inline-block">How to Introduce Meditation to the High
+                                School</a></h3>
+                        <a href="#" class="read-more-btn">Read More <i class='bx bx-right-arrow-alt'></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="single-blog-post mb-30">
+                    <div class="post-image">
+                        <a href="single-blog.html" class="d-block">
+                            <img data-cfsrc="{% static 'web/img/blog/9.jpg' %}" alt="image"
+                                style="display:none;visibility:hidden;"><img src="{% static 'web/img/blog/9.jpg' %}"
+                                alt="image">
+                        </a>
+
+                        <div class="tag">
+                            <a href="#">Management</a>
+                        </div>
+                    </div>
+
+                    <div class="post-content">
+                        <ul class="post-meta">
+                            <li class="post-author">
+                                <img data-cfsrc="{% static 'web/img/user3.jpg' %}"
+                                    class="d-inline-block rounded-circle mr-2" alt="image"
+                                    style="display:none;visibility:hidden;"><img src="{% static 'web/img/user3.jpg' %}"
+                                    class="d-inline-block rounded-circle mr-2" alt="image">
+                                By: <a href="#" class="d-inline-block">David Malan</a>
+                            </li>
+                            <li><a href="#">August 28, 2021</a></li>
+                        </ul>
+                        <h3><a href="single-blog.html" class="d-inline-block">Tools for Creating Digital Student
+                                Portfolios</a></h3>
+                        <a href="#" class="read-more-btn">Read More <i class='bx bx-right-arrow-alt'></i></a>
+                    </div>
+                </div>
+            </div>
+            {% endcomment %}
+
+            {% comment %}
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="pagination-area text-center">
+                    <span class="page-numbers current" aria-current="page">1</span>
+                    <a href="#" class="page-numbers">2</a>
+                    <a href="#" class="page-numbers">3</a>
+                    <a href="#" class="page-numbers">4</a>
+                    <a href="#" class="page-numbers">5</a>
+                    <a href="#" class="next page-numbers"><i class='bx bx-chevron-right'></i></a>
+                </div>
+            </div>
+            {% endcomment %}
+        </div>
+    </div>
+</section>
+<!-- End Blog Area -->
+{% endblock %}

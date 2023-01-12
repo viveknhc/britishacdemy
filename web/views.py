@@ -5,12 +5,12 @@ from django.http import HttpResponse
 from django.urls import reverse
 from django.contrib.auth.decorators import login_required
 import json
-from . models import Testimonial, Category, Course, Update, Event, Instructor,Banner
+from . models import Testimonial, Category, Course, Update, Event, Instructor,Banner,Branch,FranchiseEnquire
 from .forms import FeedbackForm, ContactForm, SubsriptionForm
-
+from .enquiry import franchise_enquiry_mail
 
 def index(request):
-    categories = Category.objects.filter(is_active=True)
+    categories = Category.objects.filter(is_active=True).order_by('-id')
     instructors = Instructor.objects.all()
     updates = Update.objects.all().order_by("-id")
 
@@ -51,9 +51,11 @@ def index(request):
 
 def about(request):
     testimonials = Testimonial.objects.all()
+    branches = Branch.objects.all()
     context = {
         "is_about": True,
         "testimonials": testimonials,
+        "branches":branches
     }
     return render(request, 'web/about.html', context)
 
@@ -87,7 +89,7 @@ def contact(request):
 
 
 def courses_category(request):
-    categories = Category.objects.all()
+    categories = Category.objects.all().order_by('-id')
     context = {
         "is_courses_category" : True,
         "categories" : categories,
@@ -144,7 +146,30 @@ def events(request):
     }
     return render(request, 'web/events.html',context)
 
+def franchise(request):
+    if request.method == 'POST':
+        name = request.POST['name']
+        email = request.POST['email']
+        phone = request.POST['phone']
+        state = request.POST['state']
+        city = request.POST['city']
+        enquiry = FranchiseEnquire(name = name,email = email,phone = phone,state = state,city = city)
+        enquiry.save()
+        franchise_enquiry_mail(enquiry.id)
+    context = {
+        "is_franchise" : True,  
+    }
+    return render(request,'web/franchise.html',context)
+
+
+def levelTest(request):
+    context = {
+        "is_levelTest" : True,  
+    }
+    return render(request,'web/level-test.html',context)
 
 
 def handler404(request,exception):
     return render(request, 'error/404.html', status=404)
+
+

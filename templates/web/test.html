@@ -1,0 +1,48 @@
+<style>
+    anime {
+        display: inline-block;
+        opacity: 0;
+        transform: translateY(-100%);
+        transition: all 0.4s ease-in-out
+    }
+
+    .anime-font {
+        opacity: 1;
+        transform: translateY(0);
+    }
+</style>
+
+
+
+<div class="container">
+    <h1 class="main-head">Hello World!!</h1>
+</div>
+
+
+
+<script>
+    const heading = document.querySelector('.main-head');
+    const characters = heading.textContent.match(/[\w\W]/g);    //Get the texts and create an array.
+    heading.textContent = '';    //Empty the contents.
+
+    // Loop through each character and push it inside heading element as a new anime element.
+    characters.forEach(char => {
+        const anime = document.createElement('anime');
+        anime.textContent = char;
+        heading.appendChild(anime);
+    });
+
+    // Create charcter count variable and set timer with new function called setChar().
+    let char = 0;
+    let timer = setInterval(setChar, 100);
+
+    //Stop the interval when all characters are rendered else set character anime class to anime-font.
+    function setChar() {
+        const animeChar = document.querySelectorAll('anime')[char];
+        animeChar.className = 'anime-font';
+        char++;
+        char === characters.length && clearInterval(timer);
+    }
+
+
+</script>

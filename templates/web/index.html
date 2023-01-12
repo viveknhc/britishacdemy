@@ -29,6 +29,23 @@
 <!-- End Search Box Layout -->
 {% endcomment %}
 
+
+
+
+<style>
+    anime {
+        display: inline-block;
+        opacity: 0;
+        transform: translateY(-100%);
+        transition: all 0.4s ease-in-out
+    }
+
+    .anime-font {
+        opacity: 1;
+        transform: translateY(0);
+    }
+</style>
+
 <!-- Start Main Banner -->
 <div class="banner-section" style="background-image:url({{ banner.image.url }});">
     <div class="d-table">
@@ -36,8 +53,8 @@
             <div class="container">
                 <div class="banner-content">
                     <span class="sub-title">{{ banner.sub_heading }}</span>
-                    <h1>{{ banner.main_heading }}</h1>
-                    <p>{{ banner.short_description }}</p>
+                    <h1 class="main-head">{{ banner.main_heading }}</h1>
+                    <p class="">{{ banner.short_description }}</p>
                     <div class="btn-box">
                         <a href="#about" class="default-btn"><i
                                 class='bx bx-move-horizontal icon-arrow before'></i><span class="label">Get
@@ -53,6 +70,34 @@
     <div class="divider"></div>
 </div>
 <!-- End Main Banner -->
+
+<script>
+    const heading = document.querySelector('.main-head');
+    const characters = heading.textContent.match(/[\w\W]/g);    //Get the texts and create an array.
+    heading.textContent = '';    //Empty the contents.
+
+    // Loop through each character and push it inside heading element as a new anime element.
+    characters.forEach(char => {
+        const anime = document.createElement('anime');
+        anime.textContent = char;
+        heading.appendChild(anime);
+    });
+
+    // Create charcter count variable and set timer with new function called setChar().
+    let char = 0;
+    let timer = setInterval(setChar, 100);
+
+    //Stop the interval when all characters are rendered else set character anime class to anime-font.
+    function setChar() {
+        const animeChar = document.querySelectorAll('anime')[char];
+        animeChar.className = 'anime-font';
+        char++;
+        char === characters.length && clearInterval(timer);
+    }
+
+
+</script>
+
 
 <!-- Start Feedback Form Area -->
 <section class="feedback-form-area">
@@ -143,7 +188,7 @@
                     <div class="text-box">
                         <div class="inner">
                             Trusted By
-                            <span>75K+</span>
+                            <span>1lakh+</span>
                         </div>
                     </div>
                 </div>
@@ -156,33 +201,54 @@
 <!-- End About Area -->
 
 <!-- Start Funfacts Area -->
-<section class="funfacts-area pt-100">
+<section class="funfacts-area">
     <div class="container">
         <div class="funfacts-inner">
             <div class="row">
-                <div class="col-lg-6 col-md-6 col-6">
+                <div class="col-lg-3 col-md-3 col-6">
                     <div class="single-funfact">
                         <div class="icon">
-                            <i class='bx bxs-group'></i>
+                            <i class="bx bxs-group"></i>
                         </div>
-                        <h3 class="" data-count="">3000+</h3>
+                        <h3 class="odometer odometer-auto-theme" >3000+<div class="odometer-inside"><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">5</span></span></span></span></span><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">0</span></span></span></span></span></div></h3>
                         <p>Expert Instructors</p>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-6">
+
+                <div class="col-lg-3 col-md-3 col-6">
                     <div class="single-funfact">
                         <div class="icon">
-                            <i class='bx bx-user-pin'></i>
+                            <i class="bx bx-book-reader"></i>
                         </div>
-                        <h3 class="" data-count=".">10,00,000+</h3>
+                        <h3 class="odometer odometer-auto-theme" data-count="1754"><div class="odometer-inside"><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">1</span></span></span></span></span><span class="odometer-formatting-mark">,</span><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">7</span></span></span></span></span><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">5</span></span></span></span></span><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">4</span></span></span></span></span></div></h3>
+                        <p>Total Courses</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-6">
+                    <div class="single-funfact">
+                        <div class="icon">
+                            <i class="bx bx-user-pin"></i>
+                        </div>
+                        <h3 class="odometer odometer-auto-theme">1000000 +
+                            </h3>
+                        
                         <p>Happy Students</p>
                     </div>
                 </div>
 
-               
+                <div class="col-lg-3 col-md-3 col-6">
+                    <div class="single-funfact">
+                        <div class="icon">
+                            <i class="bx bxl-deviantart"></i>
+                        </div>
+                        <h3 class="odometer odometer-auto-theme" data-count="654"><div class="odometer-inside"><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">6</span></span></span></span></span><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">5</span></span></span></span></span><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">4</span></span></span></span></span></div></h3>
+                        <p>Creative Events</p>
+                    </div>
+                </div>
             </div>
 
-            <div id="particles-js-circle-bubble"></div>
+            <div id="particles-js-circle-bubble"><canvas class="particles-js-canvas-el" width="1116" height="238" style="width: 100%; height: 100%;"></canvas></div>
         </div>
     </div>
 </section>
@@ -579,5 +645,11 @@
     </div>
 </section>
 <!-- End Blog Area -->
+
+
+<!-- google review -->
+
+<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<div class="elfsight-app-2d951600-8d2a-4cef-8e7d-d1d4e6823a44"></div>
 
 {% endblock %}

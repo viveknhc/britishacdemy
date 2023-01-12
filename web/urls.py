@@ -17,5 +17,9 @@ urlpatterns = [
     path('courses-category/', views.courses_category,name="courses_category"),
     path('courses/<str:slug>/', views.courses,name="courses"),
     path('course-details/<str:slug>/', views.course_details,name="course_details"),
+    path('franchise', views.franchise,name="franchise"),
+
+    path('level-test', views.levelTest,name="level-test"),
+
     
 ]

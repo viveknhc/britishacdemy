@@ -65,16 +65,16 @@
                             <!-- <span class="reviews-total d-inline-block">(2 reviews)</span> -->
                         </div>
 
-                        <div class="price">&#x20B9;{{course.price}}</div>
-                        <a href="#" class="default-btn"><i class='bx bx-paper-plane icon-arrow before'></i><span
-                                class="label">Buy Course</span><i class="bx bx-paper-plane icon-arrow after"></i></a>
+                        <!-- <div class="price">&#x20B9;{{course.price}}</div> -->
+                        <!-- <a href="#" class="default-btn"><i class='bx bx-paper-plane icon-arrow before'></i><span
+                                class="label">Buy Course</span><i class="bx bx-paper-plane icon-arrow after"></i></a> -->
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="row">
-            <div class="col-lg-8">
+            <div class="col-lg-12">
                 <div class="courses-details-image text-center">
                     <img src="{{course.image.crop.600x485}}" alt="image">
                 </div>
@@ -231,12 +231,12 @@
                                         </li>
 
                                         <li class="courses-lesson">
-                                            <i class='bx bx-book-open'></i> 6 lessons
+                                            <i class='bx bx-book-open'></i> {{ course.lessons }} lessons
                                         </li>
 
-                                        <li class="courses-price">
+                                        <!-- <li class="courses-price">
                                             &#x20B9;{{course.price}}
-                                        </li>
+                                        </li> -->
                                     </ul>
                                 </div>
                             </div>
@@ -247,7 +247,7 @@
                     </div>
                 </div>
             </div>
-
+            {% comment %}
             <div class="col-lg-4">
                 <div class="courses-sidebar-information">
                     <ul>
@@ -283,7 +283,7 @@
                         </li>
                     </ul>
                 </div>
-                {% comment %}
+              
                 <div class="courses-sidebar-syllabus">
                     <h3>Course Syllabus</h3>
                     <span class="chapter">Chapter 1</span>
@@ -355,10 +355,11 @@
                         </ul>
                     </div>
                 </div>
-                {% endcomment %}
+                
 
 
             </div>
+            {% endcomment %}
         </div>
     </div>
 </section>

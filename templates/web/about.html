@@ -484,60 +484,23 @@
         </div>
         <div class="row justify-content-center">
 
+
+            {% for branche in branches %}
             <div class="col-lg-4 col-md-6 col-sm-6">
                 <div class="contact-info-box mb-30">
-                    <div class="icon">
-                        <i class='bx bx-map'></i>
+                    <a href="{{branche.location}}">
+                    <div class="icon">  
+                            <i class='bx bx-map'></i>
                     </div>
-
-                    <h3> Vadakara</h3>
+                </a>
+                    <h3> {{branche.name}}</h3>
                     <!-- <p><a href=""><span >ss</span></a></p>
                             <p><a href=""><span >ss</span></a></p> -->
                 </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 col-sm-6">
-                <div class="contact-info-box mb-30">
-                    <div class="icon">
-                        <i class='bx bx-map'></i>
-                    </div>
+{% endfor %}
 
-                    <h3>Malappuram</h3>
-                    <!-- <p><a href="https://goo.gl/maps/Mii9keyeqXeNH4347" target="_blank">2750 Quadra Street Victoria Road, New York, USA</a></p> -->
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-6">
-                <div class="contact-info-box mb-30">
-                    <div class="icon">
-                        <i class='bx bx-map'></i>
-                    </div>
-
-                    <h3>Kannur</h3>
-                    <!-- <p><a href="https://goo.gl/maps/Mii9keyeqXeNH4347" target="_blank">2750 Quadra Street Victoria Road, New York, USA</a></p> -->
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-6">
-                <div class="contact-info-box mb-30">
-                    <div class="icon">
-                        <i class='bx bx-map'></i>
-                    </div>
-
-                    <h3> Thalassery</h3>
-                    <!-- <p><a href="https://goo.gl/maps/Mii9keyeqXeNH4347" target="_blank">2750 Quadra Street Victoria Road, New York, USA</a></p> -->
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-sm-6">
-                <div class="contact-info-box mb-30">
-                    <div class="icon">
-                        <i class='bx bx-map'></i>
-                    </div>
-
-                    <h3>Ernakulam</h3>
-                    <!-- <p><a href="tel:1234567890">+123 456 7890</a></p>
-                            <p><a href="tel:2414524526">+241 452 4526</a></p> -->
-                </div>
-            </div>
         </div>
     </div>
 

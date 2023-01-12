@@ -1,10 +1,14 @@
 from django.contrib import admin
-from . models import Testimonial,Category,Course,Update,Event,Feedback,Contact,Instructor,Subscriber,Banner
+from . models import Testimonial,Category,Course,Update,Event,Feedback,Contact,Instructor,Subscriber,Banner,Branch,FranchiseEnquire
 from django.contrib.auth.models import Group
 
 admin.site.unregister(Group)
 
 admin.site.register(Banner)
+
+admin.site.register(Branch)
+
+admin.site.register(FranchiseEnquire)
 
 @admin.register(Testimonial)
 class TestimonialAdmin(admin.ModelAdmin):

@@ -117,3 +117,26 @@ class Subscriber(models.Model):
 
     def __str__(self):
         return str(self.name)
+
+
+
+class Branch(models.Model):
+    name = models.CharField(max_length=300)
+    location = models.URLField()
+
+    def __str__(self):
+        return str(self.name)
+
+class Seat(models.Model):
+    no_of_seat = models.IntegerField()
+
+
+class FranchiseEnquire(models.Model):
+    name = models.CharField(max_length=200)
+    email = models.EmailField()
+    phone = models.IntegerField()
+    state = models.CharField(max_length=200)
+    city = models.CharField(max_length=200)
+
+    def __str__(self):
+        return str(self.name)

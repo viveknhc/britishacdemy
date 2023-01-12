@@ -7,16 +7,111 @@
         <!-- Start Page Title Area -->
         <div class="page-title-area item-bg3 jarallax" data-jarallax='{"speed": 0.3}'>
             <div class="container">
-                <div class="page-title-content">
+                <!-- <div class="page-title-content">
                     <ul>
                         <li><a href="/">Home</a></li>
                         <li>updates</li>
                     </ul>
                     <h2>updates</h2>
-                </div>
+                </div> -->
             </div>
         </div>
         <!-- End Page Title Area -->
+
+
+
+        <section class="about-area ptb-100 pt-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="about-content">
+                            <span class="sub-title">Don't Know which Course to choose?</span>
+                            <h2>Take The Level Test <br>
+                                And Find The Right Course For You
+                             </h2>
+                            <h6>Discover your level of fluency with our English level test.
+                            </h6>
+
+
+                            <div class="features-text">
+                                <h5><i class="bx bx-planet"></i>Answer the questions to find where you stand.</h5>
+                               
+                            </div>
+                            <p style="text-align:justify"></p>
+        
+                            
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-12">
+                        <div class="about-image">
+                            <img src="/static/web/img/about/1.jpg" class="shadow" alt="image">
+                            <img src="/static/web/img/about/2.jpg" class="shadow" alt="image">
+                        </div>
+                    </div>
+        
+                    
+                </div>
+        {% comment %}
+                <div class="about-inner-area">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="about-text">
+                                <h3>Online Courses</h3>
+                                <p>Best rate online courses for securing your career growth and future.
+                                </p>
+        
+                                <ul class="features-list">
+                                    <li><i class="bx bx-check"></i>Language classes &amp; IELTS</li>
+                                    <li><i class="bx bx-check"></i> Medical coding </li>
+                                    <li><i class="bx bx-check"></i> Graphic designing</li>
+                                    <li><i class="bx bx-check"></i> Digital marketing</li>
+                                </ul>
+                            </div>
+                        </div>
+        
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="about-text">
+                                <h3>Expert Instruction</h3>
+                                <p>Best quality instructions for your professional excellence.
+                                </p>
+        
+                                <ul class="features-list">
+                                    <li><i class="bx bx-check"></i> Best syllabus</li>
+                                    <li><i class="bx bx-check"></i> Better methods</li>
+                                    <li><i class="bx bx-check"></i> Finest strategies</li>
+                                    <li><i class="bx bx-check"></i> Creating results</li>
+                                </ul>
+                            </div>
+                        </div>
+        
+                        <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-0 offset-md-3 offset-sm-3">
+                            <div class="about-text">
+                                <h3>Professional Mentors
+                                </h3>
+                                <p>Dedicated and qualified mentors for your best education.
+                                </p>
+        
+                                <ul class="features-list">
+                                    <li><i class="bx bx-check"></i> Skilled mentors</li>
+                                    <li><i class="bx bx-check"></i> Proper monitoring</li>
+                                    <li><i class="bx bx-check"></i> Secure future</li>
+                                    <li><i class="bx bx-check"></i> Best learning experience</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+{% endcomment %}
+            </div>
+        </section>
+
+
+
+
+
+
 
         <!-- Start Blog Area -->
         <section class="blog-area ptb-100">
@@ -31,17 +126,12 @@
                                     <img src="{{update.image.crop.688x485}}" alt="image">
                                 </a>
     
-                                <!-- <div class="tag">
-                                    <a href="#">Learning</a>
-                                </div> -->
+                               
                             </div>
     
                             <div class="post-content">
                                 <ul class="post-meta">
-                                    <!-- <li class="post-author">
-                                        <img data-cfsrc="{% static 'web/img/user1.jpg' %}" class="d-inline-block rounded-circle mr-2" alt="image" style="display:none;visibility:hidden;"><img src="{% static 'web/img/user1.jpg' %}" class="d-inline-block rounded-circle mr-2" alt="image">
-                                        By: <a href="#" class="d-inline-block">Steven Smith</a>
-                                    </li> -->
+                                   
                                     <li><a href="{% url 'web:update_details' update.slug %}">{{update.date|date:"F d, Y"}}</a></li>
                                 </ul>
                                 <h3><a href="{% url 'web:update_details' update.slug %}" class="d-inline-block">{{update.title}}</a></h3>
